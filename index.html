@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_8</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 40fr;
+            line-height: 60px;
+            margin: 0px;
+            margin-right: 10px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        
+
+
+        }
+
+        #list {
+            margin: 0px;
+            
+
+        }
+
+        #list li {
+            display: inline;
+            margin: 1em 2em;
+            font-size: 1.5em;
+            list-style: none;
+            font-family: sans-serif;
+            
+
+
+
+        }
+
+        #list li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #list li a:hover {
+            background-color: blue;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0px;
+        }
+
+        .banner {
+            background-image: url(./photo-1614624532983-4ce03382d63d.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: skyblue;
+            height: 700px;
+
+
+            color: white;
+            margin: 0px;
+            line-height: 200px;
+            margin-top: 80px;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+
+        .section-1 {
+
+            height: 400fr;
+            text-align: center;
+            line-height: 200px;
+
+
+        }
+
+
+        #circle-1 {
+            height: 300px;
+            background-image: url(./confident-black-business-man-stylish-suit-standing-folded-arms-rooftop-n-office-block-looking-camera-69650703.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -140px;
+
+            background-color: orange;
+            width: 300px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 30px;
+
+
+        }
+
+        #circle-2 {
+            background-image: url(./images.jfif);
+            background-repeat: no-repeat;
+            background-position-x: -2px;
+            background-position-y: -20px;
+            background-size: cover;
+            height: 300px;
+            background-color: orange;
+            width: 300px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 30px;
+
+
+        }
+
+        #circle-3 {
+            background-image: url(./images\ \(1\).jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -40px;
+            height: 300px;
+            background-color: orange;
+            width: 300px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 30px;
+
+
+        }
+
+        #circle-4 {
+            background-image: url(./istockphoto-1152603187-612x612.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -80px;
+            height: 300px;
+            background-color: orange;
+            width: 300px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 30px;
+
+        }
+
+        .bclg {
+            background-color: gray;
+        }
+
+        .tac {
+            text-align: center;
+
+
+            /* font-weight: bold; */
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+
+        .mb10 {
+            margin-bottom: 10px;
+
+        }
+
+        .boxContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media(min-width:735px) {
+            .boxContainer {
+                flex-direction: row;
+            }
+
+            .boxContainerInner {
+                width: 50%;
+                padding: 10px;
+                margin-top: 0px;
+            }
+        }
+
+        .boxContainerInner {
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+
+        .dfaic {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            flex-direction: column;
+        }
+
+        .cw {
+            color: white;
+        }
+
+        .itm2 {
+            height: 100%;
+        }
+
+        .itm {
+            background-color: red;
+            height: calc(33% - 10px);
+        }
+
+        .about-f {
+            font-size: 40px;
+            font-family: sans-serif;
+            margin: 40px;
+            padding: 100px;
+        }
+        .bi1{
+            background-image: url(./8-steps-to-build-a-project-management-timeline@2x.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bi2{
+            background-image: url(./mobile-apps-practicing-ds-header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bi3{
+            background-image: url(./top-10-DS-projects.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+
+        .section-3 {
+            height: 300fr;
+            text-align: center;
+            line-height: 200px;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box { 
+            width: 350px;
+            height: 400px;
+           
+            overflow: hidden;
+            border: 2px solid green;
+            margin-right: 30px;
+            text-align: justify;
+            display: inline-block;
+            
+            padding: 20px;
+        }
+        #box1{
+            background-color: grey;
+            display: inline-block;
+        }
+        #box2{
+            background-color: khaki;
+            display: inline-block;
+        }
+        #box3{
+            background-color: lawngreen;
+            display: inline-block;
+        }
+        #box4{
+            background-color: lightblue;
+            display: inline-block;
+        }
+        #container{
+            display: inline-flex;
+        }
+        .box img{
+            width: 100%;
+            border-radius: 20px;
+            height: 150px;
+            margin: 0px;
+        }
+       
+        .mybutton{
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-family: arial;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .mybutton:hover{
+            background-color: blue;
+        }
+
+        .section-4 {
+            height: 200fr;
+            text-align: center;
+            line-height: 200px;
+        }
+       
+
+        #footer {
+            background-color:black;
+            color: white;
+            text-align: center;
+            height: 250px;
+            line-height: 60px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <ul id="list">
+            <li><a href="#program" class="li">
+                    HOME
+                </a></li>
+            <li><a href="#about" class="li">
+                    ABOUT US
+                </a></li>
+            <li><a href="#team" class="li">
+                    TEAM
+                </a></li>
+            <li><a href="#tech" class="li">
+                    TECHNOLOGIES
+                </a></li>
+            <li><a href="#contact" class="li">
+                    CONTACTS
+                </a></li>
+        </ul>
+
+    </div>
+
+    <div class="banner">
+        <h1 id="program" style="margin: 20px; margin-top: 10px; font-size: 50px;">PROGRAM</h1>
+    </div>
+    <div class="section-1">
+        <h1 id="team">TEAM MEMBERS</h1>
+
+        <div id="circle-1"></div>
+        <div id="circle-2"></div>
+        <div id="circle-3"></div>
+        <div id="circle-4"></div>
+
+
+    </div>
+    <div class="tac about-f" id="about">ABOUT US</div>
+    <div class="boxContainer mb10">
+        <div class="boxContainerInner">
+            <div class="itm2 bclg dfaic tac cw">
+                <H1>ABOUT PROJECT</H1>
+                <P>A project is defined as a sequence of tasks that must be completed to attain a certain outcome.
+                    According to the Project Management Institute (PMI), the term Project refers to ” to any temporary
+                    endeavor with a definite beginning and end”. Depending on its complexity, it can be managed by a
+                    single person or hundreds</P>
+            </div>
+        </div>
+        <div class="boxContainerInner">
+            <div class="itm dfaic tac cw bi1">
+                <p>
+                    Article-1
+                </p>
+            </div>
+            <div class="itm dfaic tac cw bi2">
+                <p>
+                    Article-2
+                </p>
+            </div>
+            <div class="itm dfaic tac cw bi3">
+                <p>
+                    Article-3
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <h1 id="tech">TECHNOLOGIES</h1>
+    </div>
+        <div id="container">
+            <div class="box" id="box1">
+                <div class="image" >
+                    <img src="./image1.jfif">
+                </div>
+                <h1 >this is heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti beatae amet suscipit deserunt tenetur eum, itaque facere accusamus, necessitatibus  </p>
+                <div class="image" style="text-align: center;">
+                    <a href="./html.html" class="mybutton" >read more</a>
+                </div>
+            </div>
+            <div class="box" id="box2">
+                <div class="image">
+                    <img src="./image2.jfif">
+                </div>    
+                <h1>this is heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti beatae amet suscipit deserunt tenetur eum, itaque facere accusamus, necessitatibus  </p>
+                <div class="image" style="text-align: center;">
+                    <a href="./css.html" class="mybutton">read more
+                        
+                    </a>
+    
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <div class="image">
+                    <img src="./image3.jfif">
+                </div>
+                <h1>this is heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti beatae amet suscipit deserunt tenetur eum, itaque facere accusamus, necessitatibus </p>
+                <div class="image" style="text-align: center;">
+                    <a href="./query.html" class="mybutton">read more</a>
+                </div>
+            </div>
+            <div class="box" id="box4">
+                <div class="image">
+                    <img src="./th.jfif">
+                </div>
+                <h1>this is heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti beatae amet suscipit deserunt tenetur eum, itaque facere accusamus, necessitatibus  </p>
+                <div class="image" style="text-align: center;">
+                    <a href="./bootstrap.html" class="mybutton">reda more</a>
+                </div>
+            </div>
+        </div>
+    
+    <div class="section-4">
+        <h1 id="contact">CONTACTS</h1>
+        <div id="footer">
+            <h1 style="margin: 0px;">contact section</h1>
+            <p>copyright issue</p>
+            <p>+91 . . . . . . . . . . </p>
+            <p><span>&copy;</span> 2021 websites</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
